@@ -43,14 +43,13 @@ class Feedback extends React.Component {
                     onLeaveFeedback={this.handleIncrement}
                     options={['Good', 'Neutral', 'Bad']}
                 />
-                    {this.countTotalFeedback() === 0 ? (<Notification message="There is no feedback" />) :
-                        (<Statistics
+                    <Statistics
                             good={this.state.good}
                             neutral={this.state.neutral}
                             bad={this.state.bad}
                             total={this.countTotalFeedback()}
                             positivePercentage={this.countPositiveFeedbackPercentage()}
-                        />)}
+                        />
                 </Section>
             </>
 
