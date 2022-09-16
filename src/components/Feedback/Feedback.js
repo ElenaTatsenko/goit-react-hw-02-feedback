@@ -2,7 +2,7 @@ import React from "react";
 import FeedbackOptions  from "./FeedbackOptions"
 import Statistics  from "./Statistics";
 import Section from "./Section";
-import Notification  from './Notification';
+
 
 
 class Feedback extends React.Component {
